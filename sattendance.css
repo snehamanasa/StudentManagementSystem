@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: montserrat;
+    background-color: #f1f1f1;
+    
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    width: auto;
+    height: 110px;
+  }
+  .logo{
+    height: 80px;
+    width: 80px;
+    padding: 0%;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+    float: left;
+
+  }
+  .topnav0 {
+    overflow: hidden;
+    background-color: #333;
+    width: 400px;
+    height: 110px;
+  }
+  .topnav0 {
+    float: left;
+    color: white;
+    font-size: 10px;
+
+  }
+ 
+  .topnav a {
+ 
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 36px 16px;
+    text-decoration: none;
+    font-size: 20px;
+
+
+  }
+  
+  .topnav a:hover {
+    
+    color: black;
+    background-color: #04AA6D;
+    height:110px;
+  }
+  
+  .topnav a.active {
+    
+    color: white;
+    background-color: #04AA6D;
+    height:110px;
+    
+  }
+  .topnav a.last{
+    float: right;
+    margin-right: 30px;
+  }
+  .attendance{
+	padding-top: 40px;
+    text-align: center;
+}
+.par{
+	text-align: center;
+	color: black;
+	font: bold;
+	font-size: 25px;
+}
+table{
+	
+    margin-top: 50px;
+	width:1200px;
+	margin-left: 50px;
+	
+}
+
+ 
+
+th{
+	text-align: center;
+
+}
+
+table, th, td{
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+ th, td{
+	padding: 10px;
+}
+
+tr:nth-child(even){
+	background-color: #fff;
+}
+tr:nth-child(odd){
+	background-color: #ddd ;
+}
+

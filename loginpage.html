@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <script language="javascript">
+        function check(form) { 
+           if(form.user.value=="Faculty")  {
+                //alert("logged into faculty page")
+                if(form.userid.value=="sir1" && form.pswrd.value=="sir1")
+                {
+                window.open('fhome.html')
+                }
+                else if(form.userid.value=="mam1" && form.pswrd.value=="mam1")
+                {
+                    window.open('f1home.html')
+                }
+                else{
+                    alert("wrong username or password")
+                }
+            }
+            else if(form.user.value=="Student")
+            {
+               // alert("logged into Student page")
+                if(form.userid.value=="6615" && form.pswrd.value=="2015")
+                {
+                    window.open('shome.html')
+                }
+                else if(form.userid.value=="6605" && form.pswrd.value=="2005")
+                {
+                    window.open('s1home.html')
+                }
+                else{
+                    alert("wrong username or password")
+                }
+                
+            }
+            else {
+                alert("Error Password or Username")
+            }
+        }
+    </script>
+    <head>
+        <title>Login form</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <div class ="login-form">
+            <h1>Login</h1>
+            <br>
+            <form name="f1" action="#" method = "post">
+            <select name="user">
+                <option value="Faculty">Faculty</option>
+                <option value="Student">Student</option>
+            </select>
+            <br>
+               <p>User Name</p>
+                <input type="text" name="userid" placeholder="User name">
+                <p>Password</p>
+                <input type="password" name="pswrd" placeholder="Password">
+                <button type="submit" onclick=check(this.form)>Login</button>
+            </form>
+        </div> 
+    </body>
+</html>
